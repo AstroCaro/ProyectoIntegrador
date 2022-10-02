@@ -2,8 +2,9 @@
 <section align="center">
  
   ----
-  ![GitHub issues](https://github.com/AstroCaro/ProyectoIntegrador)](https://github.com/AstroCaro/ProyectoIntegrador)
-  ----
+[![GitHub issues-open](https://badgen.net/github/open-issues/Naereen/Strapdow.js)](https://github.com/Naereen/StrapDown.js/issues?q=is%3Aopen)
+```markdown
+ ----
   ![Contributors][contributors-shield]][contributors-url]
   ![Forks][forks-shield]][forks-url]
   ![Stargazers][stars-shield]][stars-url]
