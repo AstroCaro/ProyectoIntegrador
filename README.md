@@ -3,7 +3,6 @@
  
   ----
 [![GitHub issues-open](https://badgen.net/github/open-issues/Naereen/Strapdow.js)](https://github.com/Naereen/StrapDown.js/issues?q=is%3Aopen)
-```markdown
  ----
   ![Contributors][contributors-shield]][contributors-url]
   ![Forks][forks-shield]][forks-url]
