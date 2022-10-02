@@ -1,4 +1,4 @@
-
+<!-- Badges -->
 <br />
 
 <header align="center">
