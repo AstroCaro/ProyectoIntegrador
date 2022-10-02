@@ -2,7 +2,7 @@
 <section align="center">
  
   ----
-  ![GitHub issues](https://github.com/AstroCaro/ProyectoIntegrador)]
+  ![GitHub issues](https://github.com/AstroCaro/ProyectoIntegrador)](https://github.com/AstroCaro/ProyectoIntegrador)
   ----
   ![Contributors][contributors-shield]][contributors-url]
   ![Forks][forks-shield]][forks-url]
