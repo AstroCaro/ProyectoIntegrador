@@ -1,4 +1,3 @@
-# Proyecto Integrador
 <section align="center">
 
   [![Contributors][contributors-shield]][contributors-url]
