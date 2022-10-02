@@ -2,7 +2,7 @@
 <section align="center">
  
   ----
-  ![GitHub issues](https://badgen.net/github/issues/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+  ![GitHub issues](https://github.com/AstroCaro/ProyectoIntegrador)]
   ----
   ![Contributors][contributors-shield]][contributors-url]
   ![Forks][forks-shield]][forks-url]
