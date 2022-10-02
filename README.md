@@ -1,9 +1,9 @@
 <!-- Badges -->
 <section align="center">
-  
-
+ 
   ----
   ![GitHub issues](https://badgen.net/github/issues/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+  ----
   ![Contributors][contributors-shield]][contributors-url]
   ![Forks][forks-shield]][forks-url]
   ![Stargazers][stars-shield]][stars-url]
