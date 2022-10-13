@@ -1,0 +1,237 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>El Pony Pisador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/mqueries.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo-box">
+            <h1>Tu lugar de descanso <br> para tus vacaciones soñadas</h1>
+            <a href="#" class="btn btn-completo">Registrate</a>
+            <a href="#" class="btn btn-transparente">Encuentra</a>
+        </div>
+        <nav>
+            <img class="logo" src="resouces/image/logos/hotel-logo.png" alt="logo-tribeca">
+            <ul class="nav-principal">
+                <li><a href="#">Habitaciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nuestros Clientes</a></li>
+                <li><a href="#inicio">Inicia Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="espacio"></div>
+
+    <div class="agenda">
+        <form class="agenda-form">
+            <div class="form-item">
+                <label for="fecha-desde">Desde: </label>
+                <input type="date" id="fecha-desde">
+            </div>
+            <div class="form-item">
+                <label for="fecha-hasta">Hasta: </label>
+                <input type="date" id="fecha-hasta">
+            </div>
+            <div class="form-item">
+                <label for="adultos">Adultos: </label>
+                <input type="number" min="1" value="1" id="adultos">
+            </div>
+            <div class="form-item">
+                <label for="ninos">Niños: </label>
+                <input type="number" min="1" value="1" id="ninos">
+            </div>
+            <div class="form-item">
+                <label for="Habitaciones">Habitaciones: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Reserva ahora">
+            </div>
+        </form>
+    </div>
+
+    <section class="habitacion-destacada">
+        <h2>Habitaciones Destacadas</h2>
+        <div class="foto-casas">
+            <ul class="f-contenedor">
+                <li><a><img src="resouces/image/destacadas/habitacion1.jpg" alt="habitacion1"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion2.jpg" alt="habitacion2"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion3.jpg" alt="habitacion3"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion4.jpg" alt="habitacion4"></a></li>
+            </ul>
+            <ul class="f-contenedor">
+                <li><a><img src="resouces/image/destacadas/habitacion5.jpg" alt="habitacion5"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion6.jpg" alt="habitacion6"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion7.jpg" alt="habitacion7"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion8.jpg" alt="habitacion8"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="habitacion">
+        <h2>Escoge tu habitación ideal</h2>
+        <div class="habitacion-contenedor">
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite Individual</p>
+                    <h3>$2500</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <br>
+                    <a class="btn btn-transparente">Reserva ya</a>
+                </div>
+            </div>
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite Familiar</p>
+                    <h3>$4500</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet </p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <br>
+                    <a class="btn btn-completo">Reserva ya</a>
+                </div>
+            </div>
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite matrimonial</p>
+                    <h3>$3500</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <p><i class="fas fa-star"></i>Lorem ipsum dolor sit amet</p>
+                    <br>
+                    <a class="btn btn-transparente">Reserva ya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="servicios">
+        <div class="c-container">
+            <h2>Servicios</h2>
+            <div class="c-info">
+                <div class="col span-1-of-4">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Comidas/Buffet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates ducimus delectus
+                        error ullam magni dolorum esse tempore earum. Sequi praesentium eius explicabo, voluptas
+                        veritatis iusto expedita delectus natus quasi?.</p>
+                </div>
+                <div class="col span-1-of-4">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Entretenimiento</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto quisquam aperiam totam
+                        esse perspiciatis ipsum tenetur nostrum, deserunt incidunt ipsa expedita dolore mollitia, nobis
+                        omnis eius neque at aliquam..</p>
+                </div>
+                <div class="col span-1-of-4">
+                    <i class="fas fa-bell"></i>
+                    <h3>Servicio de limpieza 24hs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nostrum voluptate earum.
+                        Saepe, tempore repellendus. Ut asperiores at odit nemo ullam doloribus ipsa, nihil molestias
+                        officiis explicabo, perferendis dignissimos. Asperiores?</p>
+                </div>
+                <div class="col span-1-of-4">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>SEGURIDAD EN TODO EL HOTEL</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, autem omnis eos alias assumenda
+                        nihil doloremque architecto animi, vel obcaecati officia consectetur iusto a quae voluptatibus
+                        eaque quaerat mollitia quibusdam?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes">
+        <h2>Nuestros clientes</h2>
+        <div class="ciudad-contenedor">
+            <ul>
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente1.jpg" alt="cliente1"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente2.jpg" alt="cliente2r"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente3.jpg" alt="cliente3"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente4.jpg" alt="cliente4"></a></li>;
+            </ul>
+            <ul>
+                <div class="cuartos">
+                    <h3>Josefina Lopez, Agente inmobiliario</h3>
+                    <div class="clientes-opiniones">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
+                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
+                            necessitatibus fuga dolore voluptatum corporis."</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Roberto Diaz, Electricista</h3>
+                    <div class="clientes-opiniones">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
+                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
+                            necessitatibus fuga dolore voluptatum corporis."</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Carlos Torres, Empleado de comercio</h3>
+                    <div class="clientes-opiniones">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
+                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
+                            necessitatibus fuga dolore voluptatum corporis."</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Roberto Aguilar, Cocinero profesional</h3>
+                    <div class="clientes-opiniones">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
+                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
+                            necessitatibus fuga dolore voluptatum corporis."</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="politicas">
+            <ul>
+                <li><a>INICIO</a></li>
+                <li><a>LOCALIZACIÓN</a></li>
+                <li><a>CONTÁCTANOS</a></li>
+                <li><a>POLÍTICAS Y TÉRMINOS</a></li>
+                <li><a>TRABAJA CON NOSOTROS</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="resouces/image/logos/hotel-logo.png" alt="hotel-logo">
+        </div>
+        <div class="social-media">
+            <h4>Síguenos en:</h4>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
