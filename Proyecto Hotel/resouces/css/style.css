@@ -1,0 +1,505 @@
+/*----------------------------------
+            Configuracion
+----------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --brand-color: #dc143c;
+    --brand-sombra: #580e1c;
+}
+
+html{
+    background-color: #f8efe1;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------
+            Headings
+----------------------------------*/
+h1,h2,h3{
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+h2{
+    padding-top: 80px;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+    content: "";
+}
+
+h3{
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 135%;
+    text-align: left;
+}
+
+
+
+/*----------------------------------
+               Header
+----------------------------------*/
+
+header{
+    background-image: linear-gradient(#0000009a,#0000009a),url("image/casa2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo-box{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid var(--brand-color);
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-completo{
+    background-color: var(--brand-color);
+}
+
+.btn-transparente{
+    color: var(--brand-color);
+}
+
+.btn:hover{
+    background-color: var(--brand-sombra);
+    border: 1px solid var(--brand-sombra);
+    color: #ffffff;
+}
+
+.nav{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.logo{
+    float: left;
+    margin-left: 10%;
+    margin-top: 18px;
+    width: 10%;
+    min-width: 100px;
+}
+
+.nav-principal{
+    padding-top: 40px;
+    float: right;
+    margin-right: 10%;
+}
+
+.nav-principal li{
+    display: inline-block;
+}
+
+.nav-principal a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.6s;
+    padding-bottom: 10px;
+}
+
+.nav-principal a:hover{
+    border-bottom: 1px solid var(--brand-color);
+}
+
+/*----------------------------------
+            Servicios
+----------------------------------*/
+
+.servicios{
+    overflow: auto;
+    height: 500px;
+}
+
+.c-parrafo{
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.c-info{
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.col{
+    padding-left: 1%;
+}
+
+.c-info i{
+    width: 80%;
+    margin: auto;
+    font-size: 2.5rem;
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.espacio {
+    height: 80px;
+}
+
+/*----------------------------------
+            Agenda
+----------------------------------*/
+
+.agenda {
+    background: linear-gradient(#973434d9, #000000d9), url("image/reserva.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 40px 60px;
+}
+
+.agenda-form {
+    display: grid;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agenda-form input[type="submit"] {
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.agenda-form label,
+.agenda-form input {
+    width: 100%;
+}
+
+.agenda-form label {
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+
+.agenda-form input:not(.btn) {
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+
+@media(min-width: 768px) {
+    .agenda-form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+
+@media(min-width: 1170px) {
+    .agenda-form {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1370px) {
+    .agenda-form {
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+
+    .agenda {
+        height: 40vh;
+        display: grid;
+    }
+}
+
+@media(max-width: 500px) {
+    .agenda {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.agenda-form .btn:hover {
+    background-color: var(--brand-color);;
+    border: 1px solid var(--brand-sombra);
+    color: #ffffff;
+}
+
+/*----------------------------------
+            Fotos Destacadas
+----------------------------------*/
+
+.habitacion-destacada{
+    overflow: auto;
+}
+
+.foto-casas{
+    padding-top: 80px;
+}
+
+.f-contenedor{
+    width: 100%;
+    list-style-type: none;
+    background-color: #000000;
+}
+
+.f-contenedor li{
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.f-contenedor a{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding: 56.2% 0 0 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.f-contenedor img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.7;
+}
+
+.f-contenedor img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/*----------------------------------
+              Clientes
+----------------------------------*/
+
+.clientes {
+    overflow: auto;
+}
+
+.clientes ul {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.clientes .cuartos {
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+}
+
+.clientes li img {
+    width: 100%;
+}
+
+.clientes-opiniones i {
+    color: var(--brand-color);
+    width: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.informacion-adicional p {
+    padding: 10px 0px;
+    font-size: 0.9rem;
+}
+/*----------------------------------
+    Habitaciones destacadas
+----------------------------------*/
+
+.habitacion{
+    background-color: #f8efe1;
+    color: black;
+    padding-bottom: 60px;
+}
+
+.habitacion-contenedor{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.modulo-habitacion{
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid #f8efe1;
+    display: inline-block;
+    border-radius: 2rem;
+    margin-left: 6.25%;
+    box-shadow: 2px 5px 10px var(--brand-color);
+}
+
+.habitacion-titulo{
+    width: 100%;
+    height: 100px;
+    background-color: var(--brand-color);
+    color: #ffffff;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+
+.habitacion-titulo h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.modulo-habitacion p{
+    font-size: 0.8rem;
+    padding: 10px 5px;
+}
+
+.habitacion-cuerpo i{
+    width: 30px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.habitacion-cuerpo a{
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+/*----------------------------------
+                Footer
+----------------------------------*/
+
+footer{
+    overflow: hidden;
+    background-color: #323232;
+    color: #ffffff;
+    position: relative;
+    height: 150px;
+    font-size: 0.7rem;
+}
+
+.politicas{
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.politicas:after{
+    display: block;
+    content: "";
+    width: 400px;
+    margin: 20px auto;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.politicas li{
+    display: inline-block;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.politicas a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.politicas li:hover{
+    color: var(--brand-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .logo{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 60%;
+}
+
+.logo img{
+    width: 80px;
+    cursor: pointer;
+}
+
+.social-media{
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    text-align: center;
+}
+
+.social-media i{
+    margin-top: 20px;
+    width: 20%;
+    color: #ffffff;
+    transition: color 1s;
+}
+
+.social-media i:hover{
+    color: var(--brand-color);
+    cursor: pointer;
+}
