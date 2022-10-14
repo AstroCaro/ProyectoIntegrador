@@ -81,6 +81,36 @@ header{
     background-position: center;
 }
 
+.head_galeria{
+    background-image: linear-gradient(#0000009a,#0000009a),url("image/reserva.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head_servicios{
+    background-image: linear-gradient(#0000009a,#0000009a),url("image/servicios.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head_contacto{
+    background-image: linear-gradient(#0000009a,#0000009a),url("image/contacto.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.aboutus{
+    background-image: linear-gradient(#0000009a,#0000009a),url("image/protur-palmeras-playa.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
 .titulo-box{
     position: absolute;
     width: 80%;
@@ -192,6 +222,14 @@ header{
     height: 80px;
 }
 
+.maps{
+    text-align: center;
+}
+
+.ubicacionParrafo{
+    text-align: center;
+}
+
 /*----------------------------------
             Agenda
 ----------------------------------*/
@@ -211,6 +249,45 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+
+.form_contacto{
+    display: grid;
+    text-align: center;
+}
+
+.form_contacto input:not(.btn) {
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+.descripcion_aboutus{
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.descripcion_mision{
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.descripcion_vision{
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.listaValores{
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 
 .agenda-form input[type="submit"] {
     margin: 18px 0 0 0;
@@ -281,6 +358,10 @@ header{
 ----------------------------------*/
 
 .habitacion-destacada{
+    overflow: auto;
+}
+
+.menú_destacado{
     overflow: auto;
 }
 
