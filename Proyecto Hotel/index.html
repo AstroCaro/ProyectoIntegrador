@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/mqueries.css" />
-    <link rel="icon" href="Imágenes/logo_PP.png">
+    <link rel="icon" href="Imágenes/HotelLogo.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -22,15 +22,16 @@
         <div class="titulo-box">
             <h1>Tu lugar de descanso <br> para tus vacaciones soñadas</h1>
             <a href="#" class="btn btn-completo">Registrate</a>
-            <a href="#" class="btn btn-transparente">Encuentra</a>
+            <a href="#" class="btn btn-transparente">Inicia Sesión</a>
         </div>
         <nav>
-            <img class="logo" src="resouces/image/logos/hotel-logo.png" alt="logo-tribeca">
+            <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca">
             <ul class="nav-principal">
-                <li><a href="#">Habitaciones</a></li>
+                <li><a href="#">Galería</a></li>
                 <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Nuestros Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Atención al cliente</a></li>
                 <li><a href="#inicio">Inicia Sesión</a></li>
             </ul>
         </nav>
@@ -61,12 +62,22 @@
                 <input type="number" min="1" value="1" id="rooms">
             </div>
             <div class="form-item">
-                <input type="submit" class="btn" value="Reserva ahora">
+                <input type="submit" class="btn" value="RESERVA AHORA">
             </div>
         </form>
     </div>
 
-    <section class="habitacion-destacada">
+    <section class="ubicacion_maps">
+        <div class="maps">
+            <h2>Aquí nos encuentras</h2>
+            <div class="ubicación">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d490.1980610744788!2d-85.68863599720021!3d10.611623717467381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665759746259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                <p>*Ubicación ficticia con fines prácticos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="habitacion-destacada">
         <h2>Habitaciones Destacadas</h2>
         <div class="foto-casas">
             <ul class="f-contenedor">
@@ -128,10 +139,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section class="servicios">
+   <!-- <section class="servicios">
         <div class="c-container">
             <h2>Servicios</h2>
             <div class="c-info">
@@ -165,7 +176,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="clientes">
         <h2>Nuestros clientes</h2>
@@ -180,33 +191,27 @@
                 <div class="cuartos">
                     <h3>Josefina Lopez, Agente inmobiliario</h3>
                     <div class="clientes-opiniones">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
-                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
-                            necessitatibus fuga dolore voluptatum corporis."</p>
+                        <p>La habitación en general. Los servicios disponibles. La comodidad del baño me gustó.</p>
                     </div>
                 </div>
                 <div class="cuartos">
                     <h3>Roberto Diaz, Electricista</h3>
                     <div class="clientes-opiniones">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
-                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
-                            necessitatibus fuga dolore voluptatum corporis."</p>
+                        <p>Excelente ubicación y magnificas las habitaciones.</p>
                     </div>
                 </div>
                 <div class="cuartos">
                     <h3>Carlos Torres, Empleado de comercio</h3>
                     <div class="clientes-opiniones">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
-                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
-                            necessitatibus fuga dolore voluptatum corporis."</p>
+                        <p>El Hotel Póney Pisador es hermoso. Sin lugar a dudas volvería a hospedarme allí para disfrutar junto a 
+                            mi familia unas vacaciones espectaculares.</p>
                     </div>
                 </div>
                 <div class="cuartos">
                     <h3>Roberto Aguilar, Cocinero profesional</h3>
                     <div class="clientes-opiniones">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam ipsum aperiam eum
-                            amet alias libero pariatur ullam animi at, explicabo ipsa optio dolorum. Distinctio
-                            necessitatibus fuga dolore voluptatum corporis."</p>
+                        <p>La ubicación del hotel es perfecta, muy cerca de la playa. El hotel es como se ve en las
+                            fotos, la habitación muy hermosa y completa.</p>
                     </div>
                 </div>
             </ul>
@@ -224,7 +229,7 @@
             </ul>
         </div>
         <div class="logo">
-            <img src="resouces/image/logos/hotel-logo.png" alt="hotel-logo">
+            <img src="Imágenes/HotelLogo.png" alt="hotel-logo">
         </div>
         <div class="social-media">
             <h4>Síguenos en:</h4>
