@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/mqueries.css" />
+    <link rel="stylesheet" href="Boostrap/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -18,7 +19,7 @@
 <body>
     <header class="head_contacto">
             <div class="titulo-box">
-                <h1>Contáctanos:</h1>
+                <h1>Atención al cliente:</h1>
             </div>
             <nav>
                 <a href="index.html"> 
@@ -29,35 +30,63 @@
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="#">Atención al cliente</a></li>
+                    <li><a href="">Registro</a></li>
                     <li><a href="index.html">Inicia Sesión</a></li>
                 </ul>
             </nav>
     </header>
     <div class="espacio"></div>
 
-    <div class="contacto_div">
-        <form class="form_contacto">
-            <div class="contactT">
-                    <label>Nombre: <input type="text" name="Nombre" placeholder="Juan"  required></label>
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                    <h2>¿Qué necesitas?</h2>
+                    <h4>Estamos dispuestos a ayudarte!</h4>
+                </div>
             </div>
-            <div class="contactT">
-                    <label>Apellido: <input type="text" name="Apellido" placeholder="Santos" required></label>
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="fname"></label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="fname" placeholder="Ingresa tu nombre" name="fname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="lname"></label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="lname" placeholder="Ingresa tu apellido" name="lname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email"></label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="comment" ></label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <div class="contactT">
-                    <label>Correo: <input type="mail" placeholder="juansantos@mail.com" required></label>
-            </div>
-            <div class="contactTe">
-                <textarea name="Mensaje" id="Mensaje" placeholder="Ingresa tu mensaje" rows="12"></textarea>
-            </div>
-            <div class="contactT">
-                    <button>Enviar</button>
-            </div>
-        </form>
-    </div> 
+        </div>
+    </div>
 
     <div class="espacio"></div>
-
+    <div class="espacio"></div>
+    <div class="espacio"></div>
+    
     <footer>
         <div class="politicas">
             <ul>
