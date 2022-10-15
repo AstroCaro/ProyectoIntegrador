@@ -1,0 +1,152 @@
+<!DOCTYPE <!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel Póney Pisador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resouces/css/mqueries.css" />
+    <link rel="icon" href="Imágenes/HotelLogo.png">
+    <link rel="stylesheet" href="Boostrap/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo-box">
+            <h1>Tu lugar de descanso <br> para tus vacaciones soñadas</h1>
+            <a href="#" class="btn btn-completo">Registrate</a>
+            <a href="#" class="btn btn-transparente">Inicia Sesión</a>
+        </div>
+        <nav>
+            <a href="index.html"> 
+                <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca" alt=""> 
+            </a>
+            <ul class="nav-principal">
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="">Registro</a></li>
+                <li><a href="index.html">Inicia Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="espacio"></div>
+
+    <div class="agenda">
+        <form class="agenda-form">
+            <div class="form-item">
+                <label for="fecha-desde">Desde: </label>
+                <input type="date" id="fecha-desde">
+            </div>
+            <div class="form-item">
+                <label for="fecha-hasta">Hasta: </label>
+                <input type="date" id="fecha-hasta">
+            </div>
+            <div class="form-item">
+                <label for="adultos">Adultos: </label>
+                <input type="number" min="1" value="1" id="adultos">
+            </div>
+            <div class="form-item">
+                <label for="ninos">Niños: </label>
+                <input type="number" min="1" value="1" id="ninos">
+            </div>
+            <div class="form-item">
+                <label for="Habitaciones">Habitaciones: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="RESERVA AHORA">
+            </div>
+        </form>
+    </div>
+
+    <section class="ubicacion_maps">
+        <div class="maps" id="mapsS">
+            <h2>Aquí nos encuentras</h2>
+            <div class="ubicación">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d490.1980610744788!2d-85.68863599720021!3d10.611623717467381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665759746259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                <p class="ubicacionParrafo">*Ubicación ficticia con fines prácticos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes">
+        <h2>Nuestros clientes</h2>
+        <div class="ciudad-contenedor">
+            <ul>
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente1.jpg" alt="cliente1"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente2.jpg" alt="cliente2r"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente3.jpg" alt="cliente3"></a></li>;
+                <li class="cuartos"><a><img src="resouces/image/clientes/cliente4.jpg" alt="cliente4"></a></li>;
+            </ul>
+            <ul>
+                <div class="cuartos">
+                    <h3>Josefina Lopez, Agente inmobiliario</h3>
+                    <div class="clientes-opiniones">
+                        <p>La habitación en general. Los servicios disponibles. La comodidad del baño me gustó.</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Roberto Diaz, Electricista</h3>
+                    <div class="clientes-opiniones">
+                        <p>Excelente ubicación y magnificas las habitaciones.</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Carlos Torres, Empleado de comercio</h3>
+                    <div class="clientes-opiniones">
+                        <p>El Hotel Póney Pisador es hermoso. Sin lugar a dudas volvería a hospedarme allí para disfrutar junto a 
+                            mi familia unas vacaciones espectaculares.</p>
+                    </div>
+                </div>
+                <div class="cuartos">
+                    <h3>Roberto Aguilar, Cocinero profesional</h3>
+                    <div class="clientes-opiniones">
+                        <p>La ubicación del hotel es perfecta, muy cerca de la playa. El hotel es como se ve en las
+                            fotos, la habitación muy hermosa y completa.</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="politicas">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html#mapsS">LOCALIZACIÓN</a></li>
+                <li><a href="contacto.html">CONTÁCTANOS</a></li>
+                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="galeria.html">IMÁGENES</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="Imágenes/HotelLogo.png" alt="hotel-logo">
+        </div>
+        <div class="social-media">
+            <h4>Síguenos en:</h4>
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
