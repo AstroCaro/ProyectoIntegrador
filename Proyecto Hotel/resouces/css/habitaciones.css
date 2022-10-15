@@ -300,5 +300,5 @@ ul.lista li {
     transition: transform .5s;
 }
 .zoom:hover {
-    transform: scale(7);
+    transform: scale(4);
 }
