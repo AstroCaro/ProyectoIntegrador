@@ -625,3 +625,43 @@ footer .logo{
     box-shadow:none;
 }
 
+/* Habitaciones */
+.container {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin: 2px 2px; */
+    } 
+  
+.habitaciones {
+    margin-top: 2rem;
+}
+
+h3.suite-titulo {
+    font-size: 2rem;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+h3.suite-titulo::after {
+    display: block;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    content: "";
+}
+  ul.lista li {
+    display: inline!important;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+.zoom:hover {
+    transform: scale(4);
+}
+
