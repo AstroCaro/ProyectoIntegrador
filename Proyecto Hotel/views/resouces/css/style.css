@@ -126,7 +126,7 @@ header{
     text-decoration: none;
     border: 1px solid var(--brand-color);
     border-radius: 200px;
-    color: white;
+    color: rgb(238, 255, 0);
     transition: background-color 0.4s, border 0.4s, color 0.4s;
 }
 
@@ -141,7 +141,7 @@ header{
 .btn:hover{
     background-color: var(--brand-sombra);
     border: 1px solid var(--brand-sombra);
-    color: #ffffff;
+    color: rgb(187, 255, 0);
 }
 
 .nav{
@@ -584,3 +584,44 @@ footer .logo{
     color: var(--brand-color);
     cursor: pointer;
 }
+
+
+/*FORMULARIO */
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+.col-md-3{
+    background: #e49a2b;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
