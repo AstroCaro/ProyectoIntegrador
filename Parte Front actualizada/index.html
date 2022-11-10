@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
+    
 </head>
 
 <body>
@@ -43,7 +43,7 @@
     <div class="espacio"></div>
 
     <div class="agenda">
-        <form class="agenda-form">
+        <form class="agenda-form" id="form0">
             <div class="form-item">
                 <label for="fecha-desde">Desde: </label>
                 <input type="date" id="fecha-desde">
@@ -54,15 +54,15 @@
             </div>
             <div class="form-item">
                 <label for="adultos">Adultos: </label>
-                <input type="number" min="1" value="1" id="adultos">
+                <input type="number" min="1" value="1" id="adultos" max="8">
             </div>
             <div class="form-item">
                 <label for="ninos">Niños: </label>
-                <input type="number" min="1" value="1" id="ninos">
+                <input type="number" min="1" value="1" id="ninos" max="8">
             </div>
             <div class="form-item">
                 <label for="Habitaciones">Habitaciones: </label>
-                <input type="number" min="1" value="1" id="rooms">
+                <input type="number" min="1" value="1" id="rooms" max="4">
             </div>
             <div class="form-item">
                 <input type="submit" class="btn" value="RESERVA AHORA">
@@ -235,6 +235,7 @@
             
         </div>
     </footer>
+    <script src="js/form0.js"></script>
 </body>
 
 </html>
