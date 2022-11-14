@@ -668,3 +668,32 @@ h3.suite-titulo::after {
     transform: scale(4);
 }
 
+
+/* Contacto */
+.correcto {
+    background-color: rgb(74, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.error-container {
+    position: relative;
+}
+
+.icon-error {
+    position: absolute;
+    right: 10px;
+    top: -43px;
+}
+
+
+.error {
+    color: red;
+    text-align: right;
+    font-size: 12px;
+    margin: 10px 0 18px;
+}
+ 
