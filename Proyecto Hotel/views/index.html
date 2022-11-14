@@ -1,5 +1,5 @@
 <!DOCTYPE <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -15,27 +15,26 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
 </head>
 
 <body>
     <header>
         <div class="titulo-box">
             <h1>Tu lugar de descanso <br> para tus vacaciones soñadas</h1>
-            <a href="#" class="btn btn-completo">Registrate</a>
-            <a href="#" class="btn btn-transparente">Inicia Sesión</a>
+            <a href="formulario.html" class="btn btn-completo">Registrate</a>
+            <a href="login.html" class="btn btn-transparente">Inicia Sesión</a>
         </div>
         <nav>
-            <a href="index.html"> 
-                <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca" alt=""> 
+            <a href="index.html">
+                <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca" alt="">
             </a>
             <ul class="nav-principal">
-                <li><a href="">Galería</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="">Registro</a></li>
-                <li><a href="index.html">Inicia Sesión</a></li>
+                <li><a href="sobrenosotros.html">Quienes somos</a></li>
+                <li><a href="formulario.html">Registro</a></li>
+                <li><a href="login.html">Inicia Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +42,7 @@
     <div class="espacio"></div>
 
     <div class="agenda">
-        <form class="agenda-form">
+        <form class="agenda-form" id="form0">
             <div class="form-item">
                 <label for="fecha-desde">Desde: </label>
                 <input type="date" id="fecha-desde">
@@ -54,15 +53,15 @@
             </div>
             <div class="form-item">
                 <label for="adultos">Adultos: </label>
-                <input type="number" min="1" value="1" id="adultos">
+                <input type="number" min="1" value="1" id="adultos" max="8">
             </div>
             <div class="form-item">
                 <label for="ninos">Niños: </label>
-                <input type="number" min="1" value="1" id="ninos">
+                <input type="number" min="1" value="1" id="ninos" max="8">
             </div>
             <div class="form-item">
                 <label for="Habitaciones">Habitaciones: </label>
-                <input type="number" min="1" value="1" id="rooms">
+                <input type="number" min="1" value="1" id="rooms" max="4">
             </div>
             <div class="form-item">
                 <input type="submit" class="btn" value="RESERVA AHORA">
@@ -70,11 +69,102 @@
         </form>
     </div>
 
+    <section class="habitacion-destacada">
+        <h2>Habitaciones Destacadas</h2>
+        <div class="foto-casas">
+            <ul class="f-contenedor">
+                <li><a><img src="resouces/image/destacadas/habitacion1.jpg" alt="habitacion1"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion2.jpg" alt="habitacion2"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion3.jpg" alt="habitacion3"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion4.jpg" alt="habitacion4"></a></li>
+            </ul>
+            <ul class="f-contenedor">
+                <li><a><img src="resouces/image/destacadas/habitacion5.jpg" alt="habitacion5"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion6.jpg" alt="habitacion6"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion7.jpg" alt="habitacion7"></a></li>
+                <li><a><img src="resouces/image/destacadas/habitacion8.jpg" alt="habitacion8"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="habitacion">
+        <h2>Escoge tu habitación ideal</h2>
+        <div class="habitacion-contenedor">
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite Individual</p>
+                    <h3>$17.000</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Wifi gratis</p>
+                    <p><i class="fas fa-star"></i>Aire acondicionado</p>
+                    <p><i class="fas fa-star"></i>TV de pantalla plana</p>
+                    <p><i class="fas fa-star"></i>Caja fuerte</p>
+                    <br>
+                    <a class="btn btn-transparente">RESERVA YA</a>
+                </div>
+            </div>
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite Familiar</p>
+                    <h3>$45.000</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Wifi gratis</p>
+                    <p><i class="fas fa-star"></i>Aire acondicionado</p>
+                    <p><i class="fas fa-star"></i>TV de pantalla plana</p>
+                    <p><i class="fas fa-star"></i>Caja fuerte</p>
+                    <p><i class="fas fa-star"></i>Desayuno y cena incluidas</p>
+                    <p><i class="fas fa-star"></i>Salida a la playa</p>
+                    <br>
+                    <a class="btn btn-completo">RESERVA YA</a>
+                </div>
+            </div>
+            <div class="modulo-habitacion">
+                <div class="habitacion-titulo">
+                    <p>Suite matrimonial</p>
+                    <h3>$35.000</h3>
+                </div>
+                <div class="habitacion-cuerpo">
+                    <p><i class="fas fa-star"></i>Wifi gratis</p>
+                    <p><i class="fas fa-star"></i>Aire acondicionado</p>
+                    <p><i class="fas fa-star"></i>TV de pantalla plana</p>
+                    <p><i class="fas fa-star"></i>Caja fuerte</p>
+                    <p><i class="fas fa-star"></i>Desayuno incluido</p>
+                    <br>
+                    <a class="btn btn-transparente">RESERVA YA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="espacio"></div>
+    <section class="menú_destacado">
+        <h2>Nuestro buffet</h2>
+        <div class="foto-casas">
+            <ul class="f-contenedor">
+                <li><a><img src="Imágenes/comida.jpg" alt="comida1"></a></li>
+                <li><a><img src="Imágenes/hibachi-buffet.jpg" alt="comida2"></a></li>
+                <li><a><img src="Imágenes/postres.jpg" alt="comida3"></a></li>
+                <li><a><img src="Imágenes/chuttersnap-a5Cobl3QB5A-unsplash.jpg" alt="comida4"></a></li>
+            </ul>
+            <ul class="f-contenedor">
+                <li><a><img src="Imágenes/dad-hotel-5Bof9geg6YQ-unsplash.jpg" alt="comida5"></a></li>
+                <li><a><img src="Imágenes/jonathan-borba-5E0d3lfoC1w-unsplash.jpg" alt="comida6"></a></li>
+                <li><a><img src="Imágenes/rumman-amin-nKs-oXRGGEg-unsplash.jpg" alt="comida7"></a></li>
+                <li><a><img src="Imágenes/sam-moghadam-khamseh-mix6yDC_hxU-unsplash.jpg" alt="comida8"></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="espacio"></div>
+
     <section class="ubicacion_maps">
         <div class="maps" id="mapsS">
             <h2>Aquí nos encuentras</h2>
             <div class="ubicación">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d490.1980610744788!2d-85.68863599720021!3d10.611623717467381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665759746259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d490.1980610744788!2d-85.68863599720021!3d10.611623717467381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665759746259!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
                 <p class="ubicacionParrafo">*Ubicación ficticia con fines prácticos</p>
             </div>
         </div>
@@ -105,7 +195,8 @@
                 <div class="cuartos">
                     <h3>Carlos Torres, Empleado de comercio</h3>
                     <div class="clientes-opiniones">
-                        <p>El Hotel Póney Pisador es hermoso. Sin lugar a dudas volvería a hospedarme allí para disfrutar junto a 
+                        <p>El Hotel Póney Pisador es hermoso. Sin lugar a dudas volvería a hospedarme allí para
+                            disfrutar junto a
                             mi familia unas vacaciones espectaculares.</p>
                     </div>
                 </div>
@@ -126,8 +217,7 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="index.html#mapsS">LOCALIZACIÓN</a></li>
                 <li><a href="contacto.html">CONTÁCTANOS</a></li>
-                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="galeria.html">IMÁGENES</a></li>
+                <li><a href="sobrenosotros.html">QUIENES SOMOS</a></li>
             </ul>
         </div>
         <div class="logo">
@@ -144,9 +234,10 @@
             <a href="https://www.instagram.com/">
                 <i class="fab fa-instagram"></i>
             </a>
-            
+
         </div>
     </footer>
+    <script src="js/form0.js"></script>
 </body>
 
 </html>

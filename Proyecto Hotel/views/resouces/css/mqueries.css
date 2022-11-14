@@ -187,3 +187,30 @@ footer .social-media{
 }
 
 }
+
+/*----------------------------------
+                Habitaciones
+----------------------------------*/
+
+@media (min-width: 480px) {
+    .d-flex {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-flex {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+}
+
+@media (min-width: 1080px) {
+    .d-flex {
+        display: flex!important;
+        flex-direction: row!important;
+    }
+}
