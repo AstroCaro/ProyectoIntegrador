@@ -8,9 +8,9 @@ try:
  mySql_insert_query = """INSERT INTO habitaciones (fk_categoria, costo)
  VALUES (%s, %s) """
 
- records_to_insert = [(10, 5000),
-                     (20, 8000),
-                     (30, 12000)]
+ records_to_insert = [(1, 5000),
+                     (2, 8000),
+                     (3, 12000)]
 
  cursor = connection.cursor()
  cursor.executemany(mySql_insert_query, records_to_insert)
