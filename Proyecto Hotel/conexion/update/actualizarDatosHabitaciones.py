@@ -4,7 +4,7 @@ try:
  database='poney_pisador',
  user='root',
  password='')
- mySql_insert_query = " UPDATE habitaciones SET costo='10000' WHERE id_habitacion='2';"
+ mySql_insert_query = " UPDATE habitaciones SET costo=10000 WHERE id_habitacion=2;"
 
  cursor = connection.cursor()
  cursor.execute(mySql_insert_query)
