@@ -4,7 +4,7 @@ try:
  database='poney_pisador',
  user='root',
  password='')
- mySql_insert_query = " UPDATE categoprias SET nombre='doble' WHERE id_categoria=2;"
+ mySql_insert_query = " UPDATE categorias SET nombre='doble' WHERE id_categoria=2;"
 
  cursor = connection.cursor()
  cursor.execute(mySql_insert_query)
