@@ -5,12 +5,12 @@ try:
  user='root',
  password='')
 
- mySql_insert_query = """INSERT INTO habitaciones (id_habitacion, fk_categoria, costo)
- VALUES (%s, %s, %s) """
+ mySql_insert_query = """INSERT INTO habitaciones (fk_categoria, costo)
+ VALUES (%s, %s) """
 
- records_to_insert = [(1, 10, 5000),
-                     (2, 20, 8000),
-                     (3, 30, 12000)]
+ records_to_insert = [(10, 5000),
+                     (20, 8000),
+                     (30, 12000)]
 
  cursor = connection.cursor()
  cursor.executemany(mySql_insert_query, records_to_insert)
