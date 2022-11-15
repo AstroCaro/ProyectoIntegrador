@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,24 +17,25 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
+
 <body>
     <header class="head_contacto">
-            <div class="titulo-box">
-                <h1>Atención al cliente:</h1>
-            </div>
-            <nav>
-                <a href="index.html"> 
-                    <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca" alt=""> 
-                </a>
-                <ul class="nav-principal">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="">Registro</a></li>
-                    <li><a href="index.html">Inicia Sesión</a></li>
-                </ul>
-            </nav>
+        <div class="titulo-box">
+            <h1>Atención al cliente:</h1>
+        </div>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="Imágenes/HotelLogo.png" alt="logo-tribeca" alt="">
+            </a>
+            <ul class="nav-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobrenosotros.html">Quienes somos</a></li>
+                <li><a href="formulario.html">Registro</a></li>
+                <li><a href="login.html">Inicia Sesión</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="espacio"></div>
 
@@ -41,60 +43,65 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="contact-info">
-                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
                     <h2>¿Qué necesitas?</h2>
                     <h4>Estamos dispuestos a ayudarte!</h4>
                 </div>
             </div>
             <div class="col-md-9">
+                <form class="formulario" id="formulario">
                 <div class="contact-form">
                     <div class="form-group">
-                      <label class="control-label col-sm-2" for="fname"></label>
+                      <label class="control-label col-sm-2"  name="username"></label>
                       <div class="col-sm-10">          
-                        <input type="text" class="form-control" id="fname" placeholder="Ingresa tu nombre" name="fname">
-                      </div>
+                        <input type="text" class="form-control validated" id="fname" placeholder="Ingresa tu nombre" maxlength="20">
+                        <div id="nameError" class="error-container"></div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="lname"></label>
                       <div class="col-sm-10">          
-                        <input type="text" class="form-control" id="lname" placeholder="Ingresa tu apellido" name="lname">
+                        <input type="text" class="form-control" id="lname" placeholder="Ingresa tu apellido" name="lname" maxlength="20" >
+                        <div id="lnameError" class="error-container"></div>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="email"></label>
                       <div class="col-sm-10">
                         <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
+                        <div id="emailError" class="error-container"></div>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="comment" ></label>
                       <div class="col-sm-10">
                         <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
+                        <div id="mensajeError" class="error-container"></div>
                       </div>
                     </div>
                     <br>
                     <div class="form-group">        
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Enviar</button>
+                        <button id="button" type="submit" class="btn btn-default">Enviar</button>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </form>
 
     <div class="espacio"></div>
     <div class="espacio"></div>
     <div class="espacio"></div>
-    
+
     <footer>
         <div class="politicas">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="index.html#mapsS">LOCALIZACIÓN</a></li>
                 <li><a href="contacto.html">CONTÁCTANOS</a></li>
-                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="galeria.html">IMÁGENES</a></li>
+                <li><a href="sobrenosotros.html">QUIENES SOMOS</a></li>
             </ul>
         </div>
         <div class="logo">
@@ -111,9 +118,11 @@
             <a href="https://www.instagram.com/">
                 <i class="fab fa-instagram"></i>
             </a>
-            
+
         </div>
     </footer>
-    
+
+    <script src="./js/formcontacto.js"></script>
 </body>
+
 </html>

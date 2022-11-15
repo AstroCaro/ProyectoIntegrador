@@ -263,29 +263,32 @@ header{
     border: none;
 }
 
+.sobre-nosotros {
+    padding-top: 60px;
+    width: 90%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
 .descripcion_aboutus{
     padding-top: 60px;
-    width: 80%;
-    margin: auto;
+    font-size: 1.5rem;
 }
 
 .descripcion_mision{
     padding-top: 60px;
-    width: 80%;
-    margin: auto;
+    font-size: 1.5rem;
 }
 
 .descripcion_vision{
     padding-top: 60px;
-    width: 80%;
-    margin: auto;
+    font-size: 1.5rem;
 }
 
 .listaValores{
     padding-top: 60px;
-    width: 80%;
-    margin: auto;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -625,3 +628,72 @@ footer .logo{
     box-shadow:none;
 }
 
+/* Habitaciones */
+.container {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin: 2px 2px; */
+    } 
+  
+.habitaciones {
+    margin-top: 2rem;
+}
+
+h3.suite-titulo {
+    font-size: 2rem;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+h3.suite-titulo::after {
+    display: block;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    content: "";
+}
+  ul.lista li {
+    display: inline!important;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+.zoom:hover {
+    transform: scale(4);
+}
+
+
+/* Contacto */
+.correcto {
+    background-color: rgb(74, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.error-container {
+    position: relative;
+}
+
+.icon-error {
+    position: absolute;
+    right: 10px;
+    top: -43px;
+}
+
+
+.error {
+    color: red;
+    text-align: right;
+    font-size: 12px;
+    margin: 10px 0 18px;
+}
+ 
