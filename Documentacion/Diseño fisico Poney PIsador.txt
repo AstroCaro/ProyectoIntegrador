@@ -1,0 +1,72 @@
+create database hotelPoneyPisador;
+use hotelPoneyPisador;
+
+create table Consultas (
+id_consulta int auto_increment primary key, 
+nombre varchar(30) not null,
+apellido varchar (30) not null,
+email varchar(30) not null,
+mensaje varchar(300) not null 
+);
+
+create table tipo_habitaciones (
+id_tipo_hab int auto_increment primary key, 
+tipo varchar(30) not null,
+); 
+
+create table habitaciones (
+id_Hab int auto_increment primary key, 
+hab_precio float not null,
+foreign key (Tipo_hab) references tipo_habitaciones (id_tipo_hab)
+); 
+
+create table promociones (
+id_promocion int auto_increment primary key, 
+descripcion varchar(30) not null,
+pro_fecha_inicio date not null,
+pro_fecha_fin date not null,
+descuento int(3) not null,
+foreign key (Hab_numero) references habitaciones (id_hab)
+); 
+
+create table clientes (
+id_cliente int auto_increment primary key, 
+nombre varchar(50) not null,
+apellido varchar (30) not null,
+direccion varchar (100) not null,
+telefono varchar (20) not null,
+DNI int(10) not null,
+email varchar(50) not null,
+);
+
+create table comidas (
+id_comida int auto_increment primary key, 
+com_nombre varchar(50) not null,
+com_descripcion varchar(100),
+com_precio float not null,
+); 
+
+create table tipo_pagos (
+id_tipo_pago int auto_increment primary key, 
+nombre varchar(20) not null,
+); 
+
+create table reservas (
+id_reserva int auto_increment primary key, 
+re_estado bool not null,
+re_fecha_inicio date not null,
+re_fecha_fin date not null,
+foreign key (Cliente_num) references clientes (id_cliente)
+foreign key (Habitacion_num2) references habitaciones (id_habitacion)
+foreign key (Tipo_comida) references comidas (id_comida)
+);
+
+create table pagos (
+id_pago int auto_increment primary key, 
+pago float not null,
+pa_estado bool not null,
+foreign key (Tipo_pago) references tipo_pagos (id_tipo_pago)
+foreign key (Reserva_num) references reservas (id_reserva)
+); 
+
+
