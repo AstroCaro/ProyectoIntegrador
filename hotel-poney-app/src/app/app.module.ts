@@ -3,13 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndexModule } from './@components/index/index.module';
-import { ContactoModule } from './@components/contacto/contacto.module';
-import { FormularioModule } from './@components/formulario/formulario.module';
-import { HabitacionesModule } from './@components/habitaciones/habitaciones.module';
-import { LoginModule } from './@components/login/login.module';
-import { ServiciosModule } from './@components/servicios/servicios.module';
-import { SobrenosotrosModule } from './@components/sobrenosotros/sobrenosotros.module';
+import { LayoutModule } from './layout/layout.module';
+import { PagesModule } from './pages/pages.module';
+import { ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,13 +15,11 @@ import { SobrenosotrosModule } from './@components/sobrenosotros/sobrenosotros.m
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IndexModule,
-    ContactoModule,
-    FormularioModule,
-    HabitacionesModule,
-    LoginModule,
-    ServiciosModule,
-    SobrenosotrosModule
+    LayoutModule,
+    PagesModule,
+  
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
