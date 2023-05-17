@@ -1,0 +1,154 @@
+/*----------------------------------
+            Configuracion
+----------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --brand-color: #dc143c;
+    --brand-sombra: #580e1c;
+}
+
+html{
+    background-color: #f8efe1;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------
+            Headings
+----------------------------------*/
+h1,h2,h3{
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+h2{
+    padding-top: 80px;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+    content: "";
+}
+
+h3{
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 135%;
+    text-align: left;
+}
+
+/*----------------------------------
+                Footer
+----------------------------------*/
+
+footer{
+    overflow: hidden;
+    background-color: #323232;
+    color: #ffffff;
+    position: relative;
+    height: 150px;
+    font-size: 0.7rem;
+}
+
+.politicas{
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.politicas:after{
+    display: block;
+    content: "";
+    width: 400px;
+    margin: 20px auto;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.politicas li{
+    display: inline-block;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.politicas a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.politicas li:hover{
+    color: var(--brand-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .logo{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 60%;
+}
+
+.logo img{
+    width: 80px;
+    cursor: pointer;
+}
+
+.social-media{
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    text-align: center;
+}
+
+.social-media i{
+    margin-top: 20px;
+    width: 20%;
+    color: #ffffff;
+    transition: color 1s;
+}
+
+.social-media i:hover{
+    color: var(--brand-color);
+    cursor: pointer;
+}
+
+
+
