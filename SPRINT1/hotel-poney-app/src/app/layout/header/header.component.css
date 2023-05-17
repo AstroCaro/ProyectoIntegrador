@@ -1,0 +1,73 @@
+/*----------------------------------
+               Header
+----------------------------------*/
+
+header{
+    background-image: linear-gradient(#0000009a,#0000009a),url("../../../assets/image/casa2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head_galeria{
+    background-image: linear-gradient(#0000009a,#0000009a),url("../../../assets/image/reserva.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head_servicios{
+    background-image: linear-gradient(#0000009a,#0000009a),url("../../../assets/image/servicios.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head_contacto{
+    background-image: linear-gradient(#0000009a,#0000009a),url("../../../assets/image/contacto.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.aboutus{
+    background-image: linear-gradient(#0000009a,#0000009a),url("../../../assets/image/protur-palmeras-playa.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titulo-box{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid var(--brand-color);
+    border-radius: 200px;
+    color: rgb(238, 255, 0);
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-completo{
+    background-color: var(--brand-color);
+}
+
+.btn-transparente{
+    color: var(--brand-color);
+}
+
+.btn:hover{
+    background-color: var(--brand-sombra);
+    border: 1px solid var(--brand-sombra);
+    color: rgb(187, 255, 0);
+}

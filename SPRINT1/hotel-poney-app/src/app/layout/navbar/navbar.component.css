@@ -1,0 +1,32 @@
+.nav-principal{
+    padding-top: 40px;
+    float: right;
+    margin-right: 10%;
+}
+
+.nav-principal li{
+    display: inline-block;
+}
+
+.nav-principal a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.6s;
+    padding-bottom: 10px;
+}
+
+.nav-principal a:hover{
+    border-bottom: 1px solid var(--brand-color);
+}
+
+.logo{
+    float: left;
+    margin-left: 10%;
+    margin-top: 18px;
+    width: 10%;
+    min-width: 100px;
+}
