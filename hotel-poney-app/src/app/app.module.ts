@@ -10,6 +10,7 @@ import { HabitacionesModule } from './@components/habitaciones/habitaciones.modu
 import { LoginModule } from './@components/login/login.module';
 import { ServiciosModule } from './@components/servicios/servicios.module';
 import { SobrenosotrosModule } from './@components/sobrenosotros/sobrenosotros.module';
+import { ClientesService } from './services/clientes.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { SobrenosotrosModule } from './@components/sobrenosotros/sobrenosotros.m
     ServiciosModule,
     SobrenosotrosModule
   ],
-  providers: [],
+  providers: [ClientesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

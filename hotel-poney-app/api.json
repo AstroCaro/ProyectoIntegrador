@@ -1,0 +1,11 @@
+{
+  "clientes":[
+      {"Id":1, "nombre": "usuario1"},
+      {"Id":2, "nombre": "usuario2"}
+  ],
+
+  "reservas":[
+      {"Id":1, "monto": "montoUsuario1", "habitaciones": "habitacionUsuario1"},
+      {"Id":2, "monto": "montoUsuario2", "habitaciones": "habitacionUsuario2"}
+  ]
+}
