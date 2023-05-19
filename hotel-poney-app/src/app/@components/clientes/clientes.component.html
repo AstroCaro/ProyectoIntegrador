@@ -1,0 +1,16 @@
+<h1>Lista de clientes</h1>
+
+<table *ngIf="mostrarClientes">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of clientes">
+      <td>{{ e.Id }}</td>
+      <td>{{ e.nombre }}</td>
+    </tr>
+  </tbody>
+</table>

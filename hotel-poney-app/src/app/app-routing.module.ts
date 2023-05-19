@@ -8,7 +8,7 @@ import { ContactoComponent } from '../app/@components/contacto/contacto.componen
 import { SobrenosotrosComponent } from '../app/@components/sobrenosotros/sobrenosotros.component';
 import { FormularioComponent } from '../app/@components/formulario/formulario.component';
 import { LoginComponent } from '../app/@components/login/login.component';
-
+import { ClientesComponent } from '../app/@components/clientes/clientes.component';
 
 const routes: Routes = [
   {path:'servicios', component:IndexComponent},
@@ -18,6 +18,7 @@ const routes: Routes = [
   {path:'contacto', component:SobrenosotrosComponent},
   {path:'contacto', component:FormularioComponent},
   {path:'LoginComponent', component:LoginComponent},
+  {path:'clientes', component:ClientesComponent},
 ];
 
 @NgModule({
